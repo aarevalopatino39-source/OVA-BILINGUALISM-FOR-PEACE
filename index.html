@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OVA — Bilingüismo para la Paz | Universidad de Córdoba</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Barra de navegación superior -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-badge" aria-hidden="true">BP</span>
+        <span class="brand-text">
+          <strong data-i18n="brand.title">Bilingüismo para la Paz</strong>
+          <small data-i18n="brand.subtitle">OVA · Práctica Pedagógica</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="#modulo-1" data-i18n="nav.m1">Contexto</a>
+        <a href="#modulo-2" data-i18n="nav.m2">Planeación</a>
+        <a href="#modulo-3" data-i18n="nav.m3">Estrategias</a>
+        <a href="#modulo-4" data-i18n="nav.m4">Evidencias</a>
+        <a href="#modulo-5" data-i18n="nav.m5">Reto</a>
+      </nav>
+
+      <div class="header-controls">
+        <div class="lang-switch" role="group" aria-label="Selector de idioma">
+          <button type="button" class="lang-btn active" data-lang="es" aria-pressed="true">ES</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra de progreso global del OVA -->
+    <div class="progress-strip">
+      <div class="container progress-strip-inner">
+        <span class="progress-label">
+          <span data-i18n="progress.label">Progreso del OVA:</span>
+          <strong id="progressPercent">0%</strong>
+        </span>
+        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressTrack">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <button type="button" class="btn-reset-mini" id="resetProgressBtn" data-i18n="progress.reset">Reiniciar</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Portada / Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Universidad de Córdoba · Experiencia Docente Compartida</p>
+          <h1 data-i18n="hero.title">Enseñar inglés con sentido: nuestra práctica en Bilingüismo para la Paz</h1>
+          <p class="hero-lead" data-i18n="hero.lead">
+            Un Objeto Virtual de Aprendizaje bilingüe creado para estudiantes universitarios y futuros docentes. Descubre cómo planear con Backward Design, dinamizar jornadas sabatinas de 6 horas con niños de 8 a 13 años y transformar el aula en una experiencia comunicativa.
+          </p>
+          <div class="hero-actions">
+            <a href="#modulo-1" class="btn btn-primary" data-i18n="hero.ctaPrimary">Explorar el OVA</a>
+            <a href="#modulo-5" class="btn btn-outline" data-i18n="hero.ctaSecondary">Ir al reto pedagógico</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Ficha de autoras y sedes">
+          <h2 class="hero-card-title" data-i18n="hero.teamTitle">Equipo de Práctica Pedagógica</h2>
+          <div class="author-list">
+            <div class="author-item">
+              <div class="author-avatar">AM</div>
+              <div>
+                <strong>Ana María Arévalo Patiño</strong>
+                <p data-i18n="hero.site1">I. E. Camilo Torres · Sede Mocarí, Montería</p>
+              </div>
+            </div>
+            <div class="author-item">
+              <div class="author-avatar secondary">RB</div>
+              <div>
+                <strong>Rosa Ballesteros</strong>
+                <p data-i18n="hero.site2">Sede La Ribera · Montería</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-meta">
+            <div class="meta-pill">
+              <span class="meta-num">6 h</span>
+              <span class="meta-label" data-i18n="hero.meta1">Jornada sabatina</span>
+            </div>
+            <div class="meta-pill">
+              <span class="meta-num">8–13</span>
+              <span class="meta-label" data-i18n="hero.meta2">Edad estudiantes</span>
+            </div>
+            <div class="meta-pill">
+              <span class="meta-num">ES / EN</span>
+              <span class="meta-label" data-i18n="hero.meta3">Recurso bilingüe</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- MÓDULO 1: Contexto -->
+    <section class="section" id="modulo-1">
+      <div class="container">
+        <div class="section-header">
+          <span class="module-tag" data-i18n="m1.tag">Módulo 01</span>
+          <h2 data-i18n="m1.title">Contexto de la práctica y dos sedes, un mismo propósito</h2>
+          <p class="section-desc" data-i18n="m1.desc">
+            Bilingüismo para la Paz acerca el aprendizaje del inglés a niños y niñas de instituciones educativas de Montería mediante sesiones presenciales los sábados. Aunque trabajamos en dos sedes distintas —Mocarí y La Ribera—, compartimos retos pedagógicos comunes.
+          </p>
+        </div>
+
+        <div class="cards-grid three-cols">
+          <article class="info-card">
+            <div class="card-icon" aria-hidden="true">01</div>
+            <h3 data-i18n="m1.c1Title">El reto del tiempo sabatino</h3>
+            <p data-i18n="m1.c1Text">
+              Sostener la motivación de estudiantes de 8 a 13 años durante jornadas de hasta 6 horas exige alternar momentos de exposición, movimiento físico, trabajo en equipo y pausas creativas.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon" aria-hidden="true">02</div>
+            <h3 data-i18n="m1.c2Title">Dos contextos comunitarios</h3>
+            <p data-i18n="m1.c2Text">
+              Desde la I. E. Camilo Torres en Mocarí hasta la sede La Ribera, el aprendizaje cobra vida cuando conectamos el vocabulario en inglés con la cultura local, el entorno y la realidad de los niños.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon" aria-hidden="true">03</div>
+            <h3 data-i18n="m1.c3Title">Aprender haciendo y jugando</h3>
+            <p data-i18n="m1.c3Text">
+              Reemplazamos bloques extensos de guías escritas por dinámicas comunicativas, juegos de Respuesta Física Total (TPR) y materiales visuales llamativos que reducen la ansiedad al hablar inglés.
+            </p>
+          </article>
+        </div>
+
+        <div class="module-footer">
+          <button type="button" class="btn btn-complete" data-module="m1">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span data-i18n="common.markComplete">Marcar módulo como completado</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÓDULO 2: Cómo creamos una clase (Backward Design) -->
+    <section class="section section-alt" id="modulo-2">
+      <div class="container">
+        <div class="section-header">
+          <span class="module-tag" data-i18n="m2.tag">Módulo 02</span>
+          <h2 data-i18n="m2.title">Cómo creamos una clase: Modelo Backward Design</h2>
+          <p class="section-desc" data-i18n="m2.desc">
+            Para estructurar cada sesión seguimos la plantilla de Diseño Inverso (Backward Design) de la Universidad de Córdoba: primero definimos qué debe lograr el estudiante, luego cómo lo evidenciaremos y finalmente qué actividades haremos.
+          </p>
+        </div>
+
+        <div class="tabs-container">
+          <div class="tabs-nav" role="tablist" aria-label="Etapas de Backward Design">
+            <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-tab="stage1" data-i18n="m2.tab1">
+              Etapa 1: Resultados deseados
+            </button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="stage2" data-i18n="m2.tab2">
+              Etapa 2: Evidencia aceptable
+            </button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="stage3" data-i18n="m2.tab3">
+              Etapa 3: Plan de aprendizaje
+            </button>
+          </div>
+
+          <div class="tab-panel active" id="tab-stage1" role="tabpanel">
+            <h3 data-i18n="m2.s1Title">Stage 1: Desired Results (Resultados deseados)</h3>
+            <p data-i18n="m2.s1Desc">
+              Todo plan inicia con una pregunta orientadora (Guiding / Inquiry Question) y resultados de aprendizaje medibles que indiquen exactamente qué podrá producir el estudiante al cierre de la jornada.
+            </p>
+            <div class="example-box">
+              <strong data-i18n="m2.exampleLabel">Ejemplo real de clase (Unidad 4: Culturas y Colombia):</strong>
+              <p data-i18n="m2.s1Example">
+                <em>Pregunta guía:</em> "¿Cómo podemos describir y comparar las maravillas de Colombia con otras culturas en inglés?" · <em>Resultado medible:</em> Al finalizar la sesión, el estudiante formula al menos 4 oraciones orales usando comparativos y superlativos para describir lugares culturales.
+              </p>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="tab-stage2" role="tabpanel">
+            <h3 data-i18n="m2.s2Title">Stage 2: Acceptable Evidence (Evidencia aceptable)</h3>
+            <p data-i18n="m2.s2Desc">
+              Antes de escoger juegos, definimos qué evidencias demostrarán que los niños realmente aprendieron: desempeño oral en retos, producción visual, participación en equipos y evaluaciones formativas o finales.
+            </p>
+            <div class="example-box">
+              <strong data-i18n="m2.exampleLabel">Ejemplo real de clase:</strong>
+              <p data-i18n="m2.s2Example">
+                Rúbrica breve de participación oral durante los relevos, tarjetas de roleplay completadas en parejas y una sesión de repaso integral (Mega-Review) previa al examen escrito final.
+              </p>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="tab-stage3" role="tabpanel">
+            <h3 data-i18n="m2.s3Title">Stage 3: Learning Plan (Plan de aprendizaje)</h3>
+            <p data-i18n="m2.s3Desc">
+              Organizamos la jornada sabatina en bloques dinámicos que contemplan consideraciones diferenciadas (ritmos de aprendizaje), calentamiento activo, actividades centrales comunicativas y cierre con retroalimentación.
+            </p>
+            <div class="timeline-mini">
+              <div class="tl-step">
+                <strong>1. Warm-Up</strong>
+                <span data-i18n="m2.tl1">Activación física y repaso lúdico (20–30 min)</span>
+              </div>
+              <div class="tl-step">
+                <strong>2. Core Activities</strong>
+                <span data-i18n="m2.tl2">Estaciones, flashcards y juegos TPR</span>
+              </div>
+              <div class="tl-step">
+                <strong>3. Production &amp; Closure</strong>
+                <span data-i18n="m2.tl3">Producción comunicativa y reflexión grupal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Planes de clase descargables -->
+        <div class="docs-box">
+          <div class="docs-header">
+            <h3 data-i18n="m2.docsTitle">Planes de clase y plantillas (Carpeta docs/)</h3>
+            <p data-i18n="m2.docsSubtitle">
+              Haz clic para consultar la plantilla de ejemplo o reemplaza los PDFs en la carpeta <code>docs/</code> con tus planes reales antes de subir a GitHub.
+            </p>
+          </div>
+          <div class="docs-grid">
+            <a href="docs/ejemplo-backward-design.html" target="_blank" rel="noopener" class="doc-card">
+              <span class="doc-badge">HTML</span>
+              <div>
+                <strong data-i18n="m2.doc1Title">Plantilla modelo Backward Design</strong>
+                <small data-i18n="m2.doc1Desc">Ejemplo interactivo listo para imprimir o guardar como PDF</small>
+              </div>
+            </a>
+            <a href="docs/plan-clase-mocari.pdf" target="_blank" rel="noopener" class="doc-card placeholder-doc">
+              <span class="doc-badge pdf">PDF</span>
+              <div>
+                <strong data-i18n="m2.doc2Title">Plan de clase — Sede Mocarí</strong>
+                <small data-i18n="m2.doc2Desc">Guarda tu archivo como docs/plan-clase-mocari.pdf</small>
+              </div>
+            </a>
+            <a href="docs/plan-clase-ribera.pdf" target="_blank" rel="noopener" class="doc-card placeholder-doc">
+              <span class="doc-badge pdf">PDF</span>
+              <div>
+                <strong data-i18n="m2.doc3Title">Plan de clase — Sede La Ribera</strong>
+                <small data-i18n="m2.doc3Desc">Guarda tu archivo como docs/plan-clase-ribera.pdf</small>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="module-footer">
+          <button type="button" class="btn btn-complete" data-module="m2">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span data-i18n="common.markComplete">Marcar módulo como completado</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÓDULO 3: Caja de herramientas (Flip Cards) -->
+    <section class="section" id="modulo-3">
+      <div class="container">
+        <div class="section-header">
+          <span class="module-tag" data-i18n="m3.tag">Módulo 03</span>
+          <h2 data-i18n="m3.title">Caja de herramientas: Dinámicas activas y TPR</h2>
+          <p class="section-desc" data-i18n="m3.desc">
+            Haz clic en cada tarjeta para voltearla y ver el objetivo pedagógico, los materiales y el consejo práctico de aplicación en aulas con niños de primaria.
+          </p>
+        </div>
+
+        <div class="flip-grid" id="flipGrid">
+          <!-- Renderizado dinámicamente desde js/app.js para soporte bilingüe fluido -->
+        </div>
+
+        <div class="module-footer">
+          <button type="button" class="btn btn-complete" data-module="m3">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span data-i18n="common.markComplete">Marcar módulo como completado</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÓDULO 4: Galería de Evidencias -->
+    <section class="section section-alt" id="modulo-4">
+      <div class="container">
+        <div class="section-header">
+          <span class="module-tag" data-i18n="m4.tag">Módulo 04</span>
+          <h2 data-i18n="m4.title">Galería de evidencias de nuestras clases</h2>
+          <p class="section-desc" data-i18n="m4.desc">
+            Filtra por categoría y haz clic en cualquier tarjeta para ver la reflexión pedagógica completa. Las ilustraciones incluidas sirven como guía: puedes reemplazarlas por tus fotos reales en la carpeta <code>images/</code>.
+          </p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filtrar evidencias">
+          <button type="button" class="filter-btn active" data-filter="all" data-i18n="m4.fAll">Todas</button>
+          <button type="button" class="filter-btn" data-filter="planeacion" data-i18n="m4.fPlan">Planeación</button>
+          <button type="button" class="filter-btn" data-filter="dinamicas" data-i18n="m4.fAct">Dinámicas</button>
+          <button type="button" class="filter-btn" data-filter="materiales" data-i18n="m4.fMat">Materiales</button>
+          <button type="button" class="filter-btn" data-filter="sedes" data-i18n="m4.fSites">Sedes</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Renderizado dinámicamente desde js/app.js -->
+        </div>
+
+        <!-- Espacio opcional para video -->
+        <div class="video-callout">
+          <div>
+            <h3 data-i18n="m4.videoTitle">¿Quieren agregar un video corto de sus clases?</h3>
+            <p data-i18n="m4.videoDesc">
+              Guarden su clip en formato MP4 como <code>videos/intro.mp4</code> y sigan la indicación del archivo <code>README.md</code> para mostrarlo directamente aquí usando rutas relativas.
+            </p>
+          </div>
+          <span class="video-pill">videos/intro.mp4</span>
+        </div>
+
+        <div class="module-footer">
+          <button type="button" class="btn btn-complete" data-module="m4">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span data-i18n="common.markComplete">Marcar módulo como completado</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÓDULO 5: Reto Pedagógico Gamificado -->
+    <section class="section" id="modulo-5">
+      <div class="container">
+        <div class="section-header">
+          <span class="module-tag" data-i18n="m5.tag">Módulo 05</span>
+          <h2 data-i18n="m5.title">Reto pedagógico gamificado</h2>
+          <p class="section-desc" data-i18n="m5.desc">
+            Pon a prueba tu criterio como futuro docente con 6 situaciones reales inspiradas en nuestra práctica en Bilingüismo para la Paz. Tu puntaje e insignias se guardan en el navegador.
+          </p>
+        </div>
+
+        <div class="quiz-layout">
+          <div class="quiz-card" id="quizContainer">
+            <div class="quiz-top">
+              <span class="quiz-counter" id="quizCounter">Pregunta 1 de 6</span>
+              <span class="quiz-score-pill">
+                <span data-i18n="m5.scoreLabel">Puntaje:</span>
+                <strong id="quizScore">0</strong>
+              </span>
+            </div>
+
+            <h3 class="quiz-question" id="quizQuestion"></h3>
+            <div class="quiz-options" id="quizOptions"></div>
+            <div class="quiz-feedback" id="quizFeedback" hidden></div>
+
+            <div class="quiz-actions">
+              <button type="button" class="btn btn-primary" id="nextQuestionBtn" hidden data-i18n="m5.nextBtn">Siguiente pregunta</button>
+              <button type="button" class="btn btn-outline" id="restartQuizBtn" hidden data-i18n="m5.retryBtn">Volver a intentar</button>
+            </div>
+          </div>
+
+          <aside class="badges-panel">
+            <h3 data-i18n="m5.badgesTitle">Insignias desbloqueables</h3>
+            <p class="badges-sub" data-i18n="m5.badgesSub">Completa los módulos y supera el reto para coleccionarlas todas.</p>
+            <div class="badges-list" id="badgesList">
+              <!-- Renderizado dinámicamente desde js/app.js -->
+            </div>
+            <div class="best-score-box">
+              <span data-i18n="m5.bestScoreLabel">Mejor puntaje guardado:</span>
+              <strong id="bestScoreDisplay">0 / 6</strong>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Lightbox para evidencias -->
+  <div class="modal-backdrop" id="evidenceModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close" id="closeModalBtn" aria-label="Cerrar">&times;</button>
+      <img src="" alt="" id="modalImg" class="modal-img" />
+      <div class="modal-body">
+        <span class="modal-cat" id="modalCat"></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <p class="modal-tip" id="modalTip"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>OVA · Bilingüismo para la Paz</strong>
+        <p data-i18n="footer.credits">
+          Elaborado por Ana María Arévalo Patiño (I. E. Camilo Torres, Mocarí) y Rosa Ballesteros (Sede La Ribera) · Universidad de Córdoba, Montería, Colombia · 2026.
+        </p>
+      </div>
+      <a href="#top" class="back-top" data-i18n="footer.backTop">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

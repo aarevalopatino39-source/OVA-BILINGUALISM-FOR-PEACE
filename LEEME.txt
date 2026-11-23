@@ -1,0 +1,3 @@
+Carpeta para videos del OVA (formato recomendado: MP4).
+Guarda aquí tu clip con un nombre simple sin tildes ni espacios, por ejemplo: intro.mp4
+Luego sigue las indicaciones del archivo README.md en la raíz del proyecto para mostrarlo en index.html.
